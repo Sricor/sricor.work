@@ -1,14 +1,13 @@
 <template>
           <div class="notion-page-scroller">
-          <div class="notion-page-cover-wrapper"><span
+          <div class="notion-page-cover-wrapper">
+            <span
               style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span
-                style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img
-                  alt="" aria-hidden="true"
-                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27512%27%20height=%27512%27/%3e"
-                  style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img
+                style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"></span>
+                  <img
                 alt="「课鸭」微信小程序"
-                srcset="/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252Fea5a3056-dce4-413b-bd50-ac7d5667f655%252F%25E5%25BA%2594%25E7%2594%25A8%25E5%259B%25BE%25E6%25A0%2587.png%3Ftable%3Dblock%26id%3D90c09c55-eebd-4cf2-a3fe-aed186961153%26cache%3Dv2&amp;w=640&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252Fea5a3056-dce4-413b-bd50-ac7d5667f655%252F%25E5%25BA%2594%25E7%2594%25A8%25E5%259B%25BE%25E6%25A0%2587.png%3Ftable%3Dblock%26id%3D90c09c55-eebd-4cf2-a3fe-aed186961153%26cache%3Dv2&amp;w=1080&amp;q=75 2x"
-                src="./「课鸭」微信小程序_files/https___s3-us-west-2.png" decoding="async" data-nimg="intrinsic"
+                srcset=""
+                src="https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/test/%20%2818%29.jpg" decoding="async" data-nimg="intrinsic"
                 class="notion-page-cover"
                 style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-position: center 50%;"><noscript></noscript></span>
           </div>

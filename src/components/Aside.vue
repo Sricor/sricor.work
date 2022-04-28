@@ -34,3 +34,118 @@
   </div>
   </aside>
 </template>
+
+<style scoped>
+.PageSocial_pageSocial__2q72j {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	text-align:center;
+	color:var(--fg-color)
+}
+.PageSocial_action__l2jzO {
+	position:relative;
+	border-radius:50%;
+	border:2px solid var(--fg-color-6);
+	transition:all .3s ease-out;
+	width:3.5em;
+	height:3.5em;
+	margin:0 0 1em;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-decoration:none!important;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	cursor:pointer
+}
+.PageSocial_action__l2jzO:last-child {
+	margin-bottom:0
+}
+.PageSocial_actionBg__VdO2Y {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center
+}
+.PageSocial_actionBg__VdO2Y svg {
+	width:50%;
+	height:50%;
+	fill:var(--fg-color-6)
+}
+.PageSocial_actionBgPane__iaA3V {
+	transition:all .3s ease-out;
+	border-radius:50%;
+	width:0;
+	height:0
+}
+.PageSocial_action__l2jzO:hover {
+	transition:all .1s ease-out
+}
+.PageSocial_action__l2jzO:hover .PageSocial_actionBgPane__iaA3V {
+	width:100%;
+	height:100%;
+	transition:all .1s ease-out
+}
+.PageSocial_action__l2jzO:hover svg {
+	transition:fill .1s ease-out;
+	fill:var(--bg-color)
+}
+[data-theme=dark] .PageSocial_action__l2jzO:hover svg {
+	fill:var(--fg-color)
+}
+.PageSocial_facebook__ShnKd .PageSocial_actionBgPane__iaA3V {
+	background:#3b5998
+}
+.PageSocial_facebook__ShnKd:hover {
+	border-color:#3b5998
+}
+.PageSocial_twitter__Q7LHY .PageSocial_actionBgPane__iaA3V {
+	background:#2795e9
+}
+.PageSocial_twitter__Q7LHY:hover {
+	border-color:#2795e9
+}
+.PageSocial_linkedin__24DsJ .PageSocial_actionBgPane__iaA3V {
+	background:#0077b5
+}
+.PageSocial_linkedin__24DsJ:hover {
+	border-color:#0077b5
+}
+.PageSocial_github___g2RK .PageSocial_actionBgPane__iaA3V {
+	background:#c9510c
+}
+.PageSocial_github___g2RK:hover {
+	border-color:#c9510c
+}
+.PageSocial_medium__fa8tD .PageSocial_actionBgPane__iaA3V {
+	background:#00ab6c
+}
+.PageSocial_medium__fa8tD:hover {
+	border-color:#00ab6c
+}
+.PageSocial_email__9d8lS .PageSocial_actionBgPane__iaA3V {
+	background:#777
+}
+.PageSocial_email__9d8lS:hover {
+	border-color:#777
+}
+@media only screen and (max-width:768px) {
+	.PageSocial_links__q1XwB {
+	position:relative;
+	left:.5em;
+	flex-wrap:wrap
+}
+.PageSocial_action__l2jzO:last-child {
+	margin-right:1em
+}
+}
+</style>

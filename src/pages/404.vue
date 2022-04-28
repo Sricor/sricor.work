@@ -1,5 +1,4 @@
 <template>
-  <div class="notion-page-scroller">
     <main class="notion-page notion-page-no-cover notion-page-no-icon notion-page-has-text-icon notion-full-page">
       <h1 class="notion-title">Python 类型注解</h1>
       <div class="notion-page-content notion-page-content-has-aside">
@@ -517,80 +516,8 @@ dict_2 <span class="token operator">=</span> <span class="token punctuation">{</
           <div class="notion-text notion-block-ecab46f720fc4e9d94819e349fd4d0d3">什么时候用类型注解要根据情况而定。但总体来说是推荐尽量多用，它让
             Python 保持了原有的灵活性，并且兼顾了强类型语言的严谨。</div>
         </article>
-        <aside class="notion-aside">
-          <div class="PageSocial_pageSocial__2q72j"><a class="PageSocial_action__l2jzO PageSocial_twitter__Q7LHY"
-              href="https://twitter.com/transitive_bs" title="Twitter @transitive_bs" target="_blank"
-              rel="noopener noreferrer">
-              <div class="PageSocial_actionBg__VdO2Y">
-                <div class="PageSocial_actionBgPane__iaA3V"></div>
-              </div>
-              <div class="PageSocial_actionBg__VdO2Y"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z">
-                  </path>
-                </svg></div>
-            </a><a class="PageSocial_action__l2jzO PageSocial_github___g2RK"
-              href="https://github.com/transitive-bullshit" title="GitHub @transitive-bullshit" target="_blank"
-              rel="noopener noreferrer">
-              <div class="PageSocial_actionBg__VdO2Y">
-                <div class="PageSocial_actionBgPane__iaA3V"></div>
-              </div>
-              <div class="PageSocial_actionBg__VdO2Y"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                  </path>
-                </svg></div>
-            </a><a class="PageSocial_action__l2jzO PageSocial_linkedin__24DsJ" href="https://www.linkedin.com/in/fisch2"
-              title="LinkedIn Travis Fischer" target="_blank" rel="noopener noreferrer">
-              <div class="PageSocial_actionBg__VdO2Y">
-                <div class="PageSocial_actionBgPane__iaA3V"></div>
-              </div>
-              <div class="PageSocial_actionBg__VdO2Y"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z">
-                  </path>
-                </svg></div>
-            </a></div>
-        </aside>
       </div>
     </main>
-    <footer class="styles_footer__RBpyk">
-      <div class="styles_copyright__nhL_k">Copyright 2022
-        <!-- -->Travis Fischer</div>
-      <div class="styles_settings__GyEhi"><a class="styles_toggleDarkMode__QfgK_"
-          href="https://nextjs-notion-sricor.vercel.app/python-%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3#" role="button"
-          title="Toggle dark mode"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-            <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
-              d="M256 48v48m0 320v48m147.08-355.08l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48m-320 0H48m355.08 147.08l-33.94-33.94M142.86 142.86l-33.94-33.94">
-            </path>
-            <circle cx="256" cy="256" r="80" fill="none" stroke-linecap="round" stroke-miterlimit="10"
-              stroke-width="32"></circle>
-          </svg></a></div>
-      <div class="styles_social__ptL3p"><a class="styles_twitter__3YoqL" href="https://twitter.com/transitive_bs"
-          title="Twitter @transitive_bs" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor"
-            fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-            </path>
-          </svg></a><a class="styles_github__0JN7a" href="https://github.com/transitive-bullshit"
-          title="GitHub @transitive-bullshit" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor"
-            fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-            </path>
-          </svg></a><a class="styles_linkedin__bgwDi" href="https://www.linkedin.com/in/fisch2"
-          title="LinkedIn Travis Fischer" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor"
-            fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
-            </path>
-          </svg></a></div>
-    </footer>
-  </div>
 </template>
 
 <style scoped>

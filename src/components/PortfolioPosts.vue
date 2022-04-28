@@ -2,7 +2,7 @@
 import Collection from '~/components/Collection.vue'
 
 const collection = {
-  name: 'Portfolio',   // collection name
+  name: 'Portfolio Posts',   // collection name
   posts: [
     {
       postTile: '',  // post title html

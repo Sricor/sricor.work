@@ -11,15 +11,16 @@ const go = (path) => {
 
 <template>
   <article class="notion-page-content-inner">
-  <div class="notion-text">Hey there!</div>
+  <div class="notion-text">Hey there!👋</div>
   <div class="notion-text">I'm
   <span class="notion-purple_background">Sricor</span>
   , a designer &amp; code enthusiast
   </div>
 
   <div class="notion-row">
-
+    <!-- <span class="notion-page-title-icon notion-page-icon"><br>👉</span> -->
     <div class="notion-spacer"></div>
+    
     <div class="notion-column" style="width:calc((75% - (3 * min(32px, 4vw))) * 0.25)">
       <a @click="go('')" class="notion-page-link">
         <span class="notion-page-title">
@@ -37,9 +38,9 @@ const go = (path) => {
       <a @click="go('portfolio')" class="notion-page-link">
         <span class="notion-page-title">
           <div class="notion-page-icon-inline notion-page-icon-span">
-            <span class="notion-page-title-icon notion-page-icon">✉️</span>
+            <span class="notion-page-title-icon notion-page-icon">🎨</span>
           </div>
-          <span class="notion-page-title-text">Contact</span>
+          <span class="notion-page-title-text">Portfolio</span>
         </span>
       </a>
     </div>
@@ -55,7 +56,7 @@ const go = (path) => {
 </template>
 
 
-<style>
+<style scoped>
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
@@ -66,4 +67,8 @@ const go = (path) => {
   opacity: 0;
 }
 
+.notion-page-link {
+  cursor: pointer;
+  border-radius: 10px;
+}
 </style>

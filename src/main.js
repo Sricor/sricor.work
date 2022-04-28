@@ -9,9 +9,6 @@ import view from '~/pages/view.vue'
 import BlogPosts from '~/components/BlogPosts.vue'
 import PortfolioPosts from '~/components/PortfolioPosts.vue'
 
-import './main.css'
-import './style2.css'
-
 // https://next.router.vuejs.org/
 const router = createRouter({
   history: createWebHistory(),

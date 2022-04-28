@@ -2,10 +2,10 @@
 import Collection from '~/components/Collection.vue'
 
 const collection = {
-  name: 'Blog',   // collection name
+  name: 'Blog Posts',   // collection name
   posts: [
     {
-      postTile: '<b>课鸭微信小程序',  // post title html
+      postTile: '<b>「课鸭」微信小程序',  // post title html
       postDate: 'Apr 16, 2021', 
       postImage: 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/test/%20%2812%29.jpg', // post image
       postTag: {
