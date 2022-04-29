@@ -26,42 +26,30 @@ router.afterEach(() => {
 </script>
 
 <template>
-  <div class="notion notion-app light-mode" name="notion">
-    <div class="notion-frame">
-      <div class="notion-page-scroller">
-        <Navbar />
-        <RouterView />
-        <Footer />
-      </div>
-    </div>
-  </div>
+  <RouterView />
 </template>
 
 <style>
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width:10px;
   height:10px;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: rgb(239, 239, 239);
   border-radius:2px;
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #bfbfbf;
   border-radius:10px;
 }
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #333;
 }
-body::-webkit-scrollbar-corner {
+::-webkit-scrollbar-corner {
   background: #179a16;
 }
 
 #nprogress .bar {
   background-color: rgba(45,170,219,.3);
-}
-
-::selection {
-     background-color: rgba(45,170,219,.3);
 }
 </style>

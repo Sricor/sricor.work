@@ -1,17 +1,12 @@
 <script setup>
+import { markRaw } from 'vue'
 import { useRoute } from 'vue-router'
 
 const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
 const route = useRoute()
-console.log(route.path)
+const params = route.path.split('/').splice(1)
+console.log(params)
 
-const pathAdd = (index) => {
-  let path = ''
-  for (let i=0; i<=index; ++i) {
-    path = '/'+ path + params[i]
-  }
-  return path
-}
 </script>
 
 <template>
@@ -31,14 +26,14 @@ const pathAdd = (index) => {
 
         <div v-for="(path, index) in params" :key="index">
           <span class="spacer">/</span>
-          <a :href="pathAdd(index)">
+          <a :href="params[index]">
             <div class="breadcrumb">
               <span class="title">{{ path }}</span>
             </div>
           </a>
         </div>
+        
       </div>
-
       <div class="breadcrumbs">
         <a class="breadcrumb button" href="#" role="button" title="Toggle dark mode">
           <svg class="notion-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">

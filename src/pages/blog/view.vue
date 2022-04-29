@@ -1,5 +1,4 @@
 <template>
-          <div class="notion-page-scroller">
           <div class="notion-page-cover-wrapper">
             <span
               style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span
@@ -90,6 +89,5 @@
               <aside class="notion-aside"></aside>
             </div>
           </main>
-
-        </div>
 </template>
+
