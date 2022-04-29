@@ -13,7 +13,7 @@ const collection = {
         blue: 'Vue.js',
         pink: 'Projects'
       },
-      postLink: '/课鸭微信小程序',
+      postLink: '/blog/view',
       postIntroduction: "<b><b>「课鸭」</b></b>微信小程序，一款在线课表小程序。Taro构建，主要功能有：课程信息展示，周次切换。这是我在学习前端Vue.js时候的一个Weekend Project，获得校组支持在校内上线。", 
     },
         {
@@ -25,7 +25,7 @@ const collection = {
         blue: 'Vue.js',
         pink: 'Projects'
       },
-      postLink: '/课鸭微信小程序',
+      postLink: '/blog/view',
       postIntroduction: "<b><b>「课鸭」</b></b>微信小程序，一款在线课表小程序。Taro构建，主要功能有：课程信息展示，周次切换。这是我在学习前端Vue.js时候的一个Weekend Project，获得校组支持在校内上线。", 
     },
   ]

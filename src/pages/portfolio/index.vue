@@ -63,7 +63,3 @@ const collection = {
 </div>
   
 </template>
-<route lang="yaml">
-meta:
-  layout: index
-</route>

@@ -1,7 +1,8 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import { useRouter } from 'vue-router'
+import { reactive, computed } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
@@ -12,16 +13,18 @@ import NProgress from 'nprogress'
 
 import './main.css'
 
+
+
 const router = useRouter()
 router.beforeEach((to, from, next) => {
   NProgress.start()  // NProgress load start
-  // document.title = config.author + ' - ' +to.name  // change title
   next()  // router next
 })
 router.afterEach(() => {
   // window.scrollTo(0,0)  // backTop
   NProgress.done()  // NProgress load end
 })
+
 
 </script>
 

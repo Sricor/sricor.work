@@ -1,11 +1,33 @@
 <script setup>
-import { markRaw } from 'vue'
-import { useRoute } from 'vue-router'
+import { computed, markRaw } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { useHead } from '@vueuse/head'
 
 const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
 const route = useRoute()
-const params = route.path.split('/').splice(1)
-console.log(params)
+
+const getPath = () =>{
+  if(route.path == '/') {
+    return ''
+  }
+  return decodeURI(route.path).split('/').slice(-1)[0]+' - '
+}
+const path = getPath()
+
+const test = decodeURI(route.path).split('/').slice(1)
+
+const goLink = (pathLength) =>{
+  let link = ''
+  for (let i = 0; i < pathLength; ++i){
+    link = link + '/' + test[i]
+  }
+  console.log(link)
+  return link
+}
+
+useHead({
+  title: path + 'Sricor',
+})
 
 </script>
 
@@ -24,15 +46,15 @@ console.log(params)
           <span class="title">Sricor</span>
         </a>
 
-        <div v-for="(path, index) in params" :key="index">
+        <div v-for="(p, index) in test" :key="index">
           <span class="spacer">/</span>
-          <a :href="params[index]">
+          <a :href="goLink(index+1)">
             <div class="breadcrumb">
-              <span class="title">{{ path }}</span>
+              <span class="title">{{ p }}</span>
             </div>
           </a>
         </div>
-        
+
       </div>
       <div class="breadcrumbs">
         <a class="breadcrumb button" href="#" role="button" title="Toggle dark mode">
