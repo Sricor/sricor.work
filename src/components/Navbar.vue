@@ -1,27 +1,24 @@
 <script setup>
-import { useRoute, useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 import { reactive, computed, nextTick, shallowReactive, watch  } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
 const router = useRouter()
 const route = useRoute()
 
-// get all path
-// console.log(pathAll)
-const path = shallowReactive(decodeURI(route.path).split('/').slice(-1)[0])
+const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
 
 // navbar link
 const pathGo = (path) =>{
   // console.log(link)
   window.scrollTo(0,0) // back to top
-  router.push("/"+path) // router link
+  router.push("/" + path) // router link
 }
 
 // dark mode
 const emits = defineEmits(['modeChange'])
-const handleNodeClick = (e) => {
- emits('modeChange')
+const modeChange = (e) => {
+  emits('modeChange')
 }
 
 </script>
@@ -42,7 +39,7 @@ const handleNodeClick = (e) => {
         </a>
       </div>
       <div class="breadcrumbs">
-        <a @click="handleNodeClick()" class="breadcrumb button" href="#" role="button" title="Toggle dark mode">
+        <a @click="modeChange()" class="breadcrumb button" role="button" title="Toggle dark mode">
           <svg class="notion-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48m0 320v48m147.08-355.08l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48m-320 0H48m355.08 147.08l-33.94-33.94M142.86 142.86l-33.94-33.94"></path>
             <circle cx="256" cy="256" r="80" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"></circle>

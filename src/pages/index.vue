@@ -1,22 +1,24 @@
 <script setup>
   import { shallowReactive } from 'vue'
-  import { useRouter } from 'vue-router'
-  import Wrapper from '~/components/Wrapper.vue'
   import Aside from '~/components/Aside.vue'
 
   import BlogPosts from '~/pages/blog/index.vue'
   import PortfolioPosts from '~/pages/portfolio/index.vue'
 
-  const router = useRouter()
-
-  const name = 'Sricor'
-
-
-  const image = '/banner.svg'
-
   const collection = shallowReactive({
     type: BlogPosts
   })
+
+  const emits = defineEmits(['setWrapper', 'setPostDescription', 'setMainType'])
+  emits('setWrapper', 'banner.svg')
+  emits('setMainType', 'index-page')
+  emits(
+    'setPostDescription', {
+      title: 'Sricor',
+      image: 'cat.jpg',
+    }
+  )
+
 </script>
 
 <template>

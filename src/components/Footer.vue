@@ -1,6 +1,10 @@
+<script setup>
+
+</script>
+
+
 <template>
   <footer class="styles_footer__RBpyk">
-    
     <div class="styles_copyright__nhL_k">
       <a href="https://beian.miit.gov.cn/" target="_blank">
         <p class="styles_copyright__nhL_k" style="font-size: 1px; text-align:center;">粤ICP备2021126496号-1</p>
@@ -24,7 +28,6 @@
         </svg>
       </a>
     </div>
-
   </footer>
 </template>
 
