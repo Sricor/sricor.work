@@ -1,6 +1,8 @@
 <script setup>
 const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
 const title = 'Sricor'
+
+
 </script>
 
 <template>

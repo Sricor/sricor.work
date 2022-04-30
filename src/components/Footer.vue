@@ -3,7 +3,7 @@
     
     <div class="styles_copyright__nhL_k">
       <a href="https://beian.miit.gov.cn/" target="_blank">
-        <p style="font-size: 1px; text-align:center;">粤ICP备2021126496号-1</p>
+        <p class="styles_copyright__nhL_k" style="font-size: 1px; text-align:center;">粤ICP备2021126496号-1</p>
       </a>Copyright 2020 - {{ new Date().getFullYear() }} Sricor
     </div>
 

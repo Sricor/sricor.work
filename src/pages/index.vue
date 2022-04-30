@@ -62,7 +62,7 @@
         <transition name="fade" mode='out-in'>
           <component :is="collection.type" />
         </transition>
-        </keep-alive>
+      </keep-alive>
     </article>
     <Aside />
   </div>
@@ -79,6 +79,7 @@
 .fade-leave-to {
   opacity: 0;
 }
+
 .notion-page-link {
 cursor: pointer;
 border-radius: 10px;

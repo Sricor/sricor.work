@@ -1,33 +1,28 @@
 <script setup>
-import { computed, markRaw } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
+import { reactive, computed, nextTick, shallowReactive, watch  } from 'vue'
 
 const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
+const router = useRouter()
 const route = useRoute()
 
-const getPath = () =>{
-  if(route.path == '/') {
-    return ''
-  }
-  return decodeURI(route.path).split('/').slice(-1)[0]+' - '
-}
-const path = getPath()
+// get all path
+// console.log(pathAll)
+const path = shallowReactive(decodeURI(route.path).split('/').slice(-1)[0])
 
-const test = decodeURI(route.path).split('/').slice(1)
-
-const goLink = (pathLength) =>{
-  let link = ''
-  for (let i = 0; i < pathLength; ++i){
-    link = link + '/' + test[i]
-  }
-  console.log(link)
-  return link
+// navbar link
+const pathGo = (path) =>{
+  // console.log(link)
+  window.scrollTo(0,0) // back to top
+  router.push("/"+path) // router link
 }
 
-useHead({
-  title: path + 'Sricor',
-})
+// dark mode
+const emits = defineEmits(['modeChange'])
+const handleNodeClick = (e) => {
+ emits('modeChange')
+}
 
 </script>
 
@@ -35,7 +30,7 @@ useHead({
   <header class="notion-header">
     <div class="notion-nav-header">
       <div class="breadcrumbs">
-        <a class="breadcrumb" href="/">
+        <a @click="pathGo('')" class="breadcrumb">
           <div class="notion-page-icon-inline notion-page-icon-image">
             <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%; ">
               <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
@@ -45,19 +40,9 @@ useHead({
           </div>
           <span class="title">Sricor</span>
         </a>
-
-        <div v-for="(p, index) in test" :key="index">
-          <span class="spacer">/</span>
-          <a :href="goLink(index+1)">
-            <div class="breadcrumb">
-              <span class="title">{{ p }}</span>
-            </div>
-          </a>
-        </div>
-
       </div>
       <div class="breadcrumbs">
-        <a class="breadcrumb button" href="#" role="button" title="Toggle dark mode">
+        <a @click="handleNodeClick()" class="breadcrumb button" href="#" role="button" title="Toggle dark mode">
           <svg class="notion-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48m0 320v48m147.08-355.08l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48m-320 0H48m355.08 147.08l-33.94-33.94M142.86 142.86l-33.94-33.94"></path>
             <circle cx="256" cy="256" r="80" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"></circle>
