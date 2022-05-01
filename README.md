@@ -1,13 +1,13 @@
 <br>
 
 <h2 align='center'>
-My personal portfolio web app with <b>Vite</b<sup></sup><br>
+My personal web app with <b>Vite</b<sup></sup><br>
 </h2>
 
 <br>
 
 <p align='center'>
-<a href="https://www.sricor.work">🔴Live Demo</a>
+<a href="https://sricor.work">🔴Live Demo</a>
 </p>
 
 <br>
