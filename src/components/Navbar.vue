@@ -41,7 +41,7 @@ const setHead = () => {
     return nav.path.slice(-1)[0] +' - Sricor'
   }
   else {
-    return 'Sricor'
+    return 'Welcome - Sricor'
   }
 }
 

@@ -12,17 +12,18 @@ import './main.css'
 
 const route = useRoute()
 const router = useRouter()
-
 // site head
 useHead({
   // Can be static or computed
   title: 'Sricor',
   meta: [
-    {
-      name: `description`,
-      content: "Sricor",
-    },
+    { charset: "UTF-8" },
+    { name: "description", content: "Sricor" },
+    { name: "viewport", content: "width=device-width, initial-scale=1.0" },
   ],
+  link:[
+    { rel: 'icon', href: '/favicon.jpg'}
+  ]
 })
 
 // route change
