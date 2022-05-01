@@ -1,4 +1,5 @@
 <script setup>
+import Catalogue from '~/components/Catalogue.vue'
 const emits = defineEmits(['setWrapper', 'setPostDescription', 'setMainType'])
 emits('setWrapper', 'banner.svg')
 emits('setMainType', '')
@@ -18,7 +19,7 @@ emits(
 </script>
 
 <template>
-    <div class="notion-page-content notion-page-content-has-aside">
+    <div class="notion-page-content notion-page-content-has-aside" id="article">
       <article class="notion-page-content-inner">
         <h3 class="notion-h notion-h2 notion-h-indent-0 notion-block-8f396c07bc514b5d9272996ad0ac4434"
           data-id="8f396c07bc514b5d9272996ad0ac4434"><span>
@@ -518,9 +519,10 @@ dict_2 <span class="token operator">=</span> <span class="token punctuation">{</
         <div class="notion-text notion-block-ecab46f720fc4e9d94819e349fd4d0d3">什么时候用类型注解要根据情况而定。但总体来说是推荐尽量多用，它让
           Python 保持了原有的灵活性，并且兼顾了强类型语言的严谨。</div>
       </article>
+      <aside class="notion-aside">
+      <div class="notion-aside-table-of-contents">
+        <Catalogue selector="#article" />
+      </div>
+    </aside>
     </div>
 </template>
-
-<style scoped>
-
-</style>

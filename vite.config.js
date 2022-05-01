@@ -20,7 +20,7 @@ export default defineConfig({
       dirs: 'src/pages',
       extendRoute(route, parent) {
         route.path =  encodeURI(route.path)
-        console.log(route.path)
+        // console.log(route.path)
       },
     }),
 
