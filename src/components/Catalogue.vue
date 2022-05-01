@@ -8,6 +8,7 @@
         :class="[h.className, {active: curHeader === index}]"
       >
         <a
+          class="notion-table-of-contents-item-body notion-table-of-contents-item notion-table-of-contents-item-indent-level-1"
           :href="`#${h.id}`"
           @click.prevent="scroll(h.id, index)"
         >{{ h.content }}</a>
@@ -17,6 +18,7 @@
 </template>
 
 <script>
+// <Catalogue selector="#article" />
 import debounce from 'lodash.debounce'
 import smooth from 'smoothscroll-polyfill'
 export default {

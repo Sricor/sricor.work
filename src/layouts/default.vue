@@ -7,7 +7,7 @@ import Wrapper from '~/components/Wrapper.vue'
 import PostDescription from '~/components/PostDescription.vue'
 
 const page = shallowReactive({
-  image: 'cat.jpg',
+  image: 'cat.webp',
   description: {},
   imageUrl: config.image.url,
   imageParams: config.image.params

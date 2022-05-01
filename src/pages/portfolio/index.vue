@@ -22,14 +22,14 @@ const collection = {
     {
       postTile: '',  // post title html
       postDate: 'Apr 16, 2021', 
-      postImage: 'test/%20%2819%29.jpg', // post image
+      postImage: 'portfolio/ventHub.webp', // post image
       postTag: {
         purple: 'Web Dev',
         blue: 'Vue.js',
         pink: 'Projects'
       },
       postLink: '/课鸭微信小程序',
-      postIntroduction: "", 
+      postIntroduction: "这是一个测试标签贴", 
     }
   ]
 }

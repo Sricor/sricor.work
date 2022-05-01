@@ -20,16 +20,16 @@ const collection = {
   name: ' 📕 Blog Posts',   // collection name
   posts: [
     {
-      postTile: '<b>Python 类型注解',  // post title html
+      postTile: '<b>📙 Python 学习笔记',  // post title html
       postDate: 'Apr 16, 2021', 
-      postImage: 'test/%20%2812%29.jpg', // post image
+      postImage: 'blog/python.webp', // post image
       postTag: {
-        purple: 'Python',
         blue: 'Blog',
+        purple: 'Python',
         pink: 'Tech'
       },
-      postLink: '/Blog/Python 类型注解',
-      postIntroduction: "<b>Python Notes", 
+      postLink: '/Blog/Python 学习笔记',
+      postIntroduction: "这里会记录我在学习Python过程中的重要知识，收获和遇到过的错误，方便查阅。同时也作备忘，温故而知新。", 
     },
   ]
 }

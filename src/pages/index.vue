@@ -19,7 +19,7 @@ emits('setMainType', 'index-page')
 emits(
   'setPostDescription', {
     title: 'Sricor',
-    image: 'cat.jpg',
+    image: 'cat.webp',
   }
 )
 </script>
@@ -32,11 +32,11 @@ emits(
         <span class="notion-purple_background">Sricor</span>
         , a designer &amp; code enthusiast
       </div>
+      <div class="notion-text">👇You can click below to view my other works</div>
 
       <div class="notion-row">
-        <!-- <span class="notion-page-title-icon notion-page-icon"><br>👉</span> -->
-        <div class="notion-spacer"></div>
 
+        <div class="notion-spacer"></div>
         <div class="notion-column" style="width:calc((75% - (3 * min(32px, 4vw))) * 0.25)">
           <a @click="collection.type = BlogPosts" class="notion-page-link">
             <span class="notion-page-title">
@@ -60,6 +60,30 @@ emits(
               </span>
             </a>
           </div>
+
+        <div class="notion-spacer"></div>
+          <div class="notion-column" style="width:calc((75% - (3 * min(32px, 4vw))) * 0.25)">
+            <a class="notion-page-link">
+              <span class="notion-page-title">
+                <div class="notion-page-icon-inline notion-page-icon-span">
+                  <span class="notion-page-title-icon notion-page-icon">👋</span>
+                </div>
+                <span class="notion-page-title-text">About</span>
+              </span>
+            </a>
+          </div>
+          <div class="notion-spacer"></div>
+          <div class="notion-column" style="width:calc((75% - (3 * min(32px, 4vw))) * 0.25)">
+            <a class="notion-page-link">
+              <span class="notion-page-title">
+                <div class="notion-page-icon-inline notion-page-icon-span">
+                  <span class="notion-page-title-icon notion-page-icon">✉️</span>
+                </div>
+                <span class="notion-page-title-text">Contact</span>
+              </span>
+            </a>
+          </div>
+          
         </div>
       </div>
       <br>
