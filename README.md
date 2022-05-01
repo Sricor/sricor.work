@@ -7,7 +7,7 @@ My personal web app with <b>Vite</b<sup></sup><br>
 <br>
 
 <p align='center'>
-<a href="https://www.sricor.work">🔴Live Demo</a>
+<a href="https://sricor.work">🔴Live Demo</a>
 </p>
 
 <br>
