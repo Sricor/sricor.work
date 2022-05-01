@@ -8,12 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vueuse/head": "^0.7.6",
     "vue": "^3.2.25",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
+    "@vueuse/head": "^0.7.6",
     "lodash.debounce": "^4.0.8",
     "nprogress": "^0.2.0",
     "smoothscroll-polyfill": "^0.4.4",
