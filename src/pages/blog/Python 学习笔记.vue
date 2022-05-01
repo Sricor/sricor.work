@@ -10,8 +10,8 @@ emits(
     image: 'cat.webp',
     published: 'Published March 31, 2022',
     tag: {
-      purple: 'Python',
       blue: 'Blog',
+      purple: 'Python',
       pink: 'Tech'
     }
   }

@@ -12,7 +12,7 @@ emits('setMainType', 'index-page')
 emits(
   'setPostDescription', {
     title: 'Sricor',
-    image: 'cat.jpg',
+    image: 'cat.webp',
   }
 )
 
