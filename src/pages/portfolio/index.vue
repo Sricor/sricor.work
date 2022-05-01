@@ -54,7 +54,15 @@ const collection = {
     },
   ]
 }
-
+  const emits = defineEmits(['setWrapper', 'setPostDescription', 'setMainType'])
+  emits('setWrapper', 'banner.svg')
+  emits('setMainType', 'index-page')
+  emits(
+    'setPostDescription', {
+      title: 'Sricor',
+      image: 'cat.jpg',
+    }
+  )
 </script>
 
 <template>

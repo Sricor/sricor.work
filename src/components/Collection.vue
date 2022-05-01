@@ -3,6 +3,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
+// link route
 const go = (path) => {
   window.scrollTo(0,0) // back to top
   router.push(path)

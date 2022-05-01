@@ -1,20 +1,20 @@
 <script setup>
-  const emits = defineEmits(['setWrapper', 'setPostDescription', 'setMainType'])
-  emits('setWrapper', 'banner.svg')
-  emits('setMainType', '')
-  emits(
-    'setPostDescription', {
-      title: 'Sricor',
-      author: 'Sricor',
-      image: 'cat.jpg',
-      published: 'Published March 31, 2022',
-      tag: {
-        purple: 'Web Dev',
-        blue: 'Vue.js',
-        pink: 'Projects'
-      }
+const emits = defineEmits(['setWrapper', 'setPostDescription', 'setMainType'])
+emits('setWrapper', 'banner.svg')
+emits('setMainType', '')
+emits(
+  'setPostDescription', {
+    title: 'Python 类型注解',
+    author: 'Sricor',
+    image: 'cat.jpg',
+    published: 'Published March 31, 2022',
+    tag: {
+      purple: 'Python',
+      blue: 'Blog',
+      pink: 'Tech'
     }
-  )
+  }
+)
 </script>
 
 <template>
