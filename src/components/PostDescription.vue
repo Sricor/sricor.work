@@ -1,6 +1,7 @@
 <script setup>
 defineProps({
-  imagePath: String,
+  imageUrl: String,
+  imageParams: String,
   description: Object
 })
 
@@ -22,7 +23,7 @@ const description = {
   <div class="notion-page-icon-hero notion-page-icon-image">
     <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
       <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
-        <img :src="imagePath + description.image" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;" />
+        <img :src="imageUrl + description.image + imageParams" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;" />
       </span>
     </span>
   </div>

@@ -10,7 +10,8 @@ const go = (path) => {
 }
 
 defineProps({
-  imagePath: String,
+  imageUrl: String,
+  imageParams: String,
   collection: Object
 })
 
@@ -19,16 +20,16 @@ const collection = {
   name: 'Blog Posts',   // collection name
   posts: [
     {
-      postTile: '<b>「课鸭」微信小程序',  // post title html
-      postDate: 'Apr 16, 2021', 
-      postImage: 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/test/%20%2812%29.jpg', // post image
+      postTile: '',  // post title html
+      postDate: '', 
+      postImage: 'name.jpg', // post image
       postTag: {
-        purple: 'Web Dev',
-        blue: 'Vue.js',
-        pink: 'Projects'
+        purple: 'tag1',
+        blue: 'tag2',
+        pink: 'tag3'
       },
-      postLink: '/blog/view',
-      postIntroduction: "<b><b>「课鸭」</b></b>微信小程序，一款在线课表小程序。Taro构建，主要功能有：课程信息展示，周次切换。这是我在学习前端Vue.js时候的一个Weekend Project，获得校组支持在校内上线。", 
+      postLink: '',
+      postIntroduction: "", 
     },
   ]
 }
@@ -51,13 +52,13 @@ const collection = {
 
             <!-- post view -->
             <div v-for="(post, index) in collection.posts" :key="index">
-              <a @click="go(post.postLink)" class="notion-collection-card notion-collection-card-size-medium">
+              <a @click="go(encodeURI(post.postLink))" class="notion-collection-card notion-collection-card-size-medium">
                 
                 <!-- post image -->
                 <div class="notion-collection-card-cover">
                   <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
                     <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
-                      <img alt="" :src="post.postImage" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;" />
+                      <img alt="" :src="imageUrl + post.postImage + imageParams" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;" />
                     </span>
                   </span>
                 </div>

@@ -4,19 +4,20 @@ import { useRoute, useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 defineProps({
-  imagePath: String,
-  image: String
+  image: String,
+  imageUrl: String,
+  imageParams: String
 })
 
 const emits = defineEmits(['modeChange'])
 
 const router = useRouter()
 const route = useRoute()
-const imagePath = 'https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/cat.jpg'
 
 const nav = shallowReactive({
   path: decodeURI(route.path).split('/').slice(1)
 })
+console.log(route.path)
 
 // navbar link
 const goPath = (local) => {
@@ -31,7 +32,7 @@ const goPath = (local) => {
     }
   }
   window.scrollTo(0,0) // back to top
-  router.push(pathLink) // router link
+  router.push(encodeURI(pathLink)) // router link
 }
 
 // page title name
@@ -73,7 +74,7 @@ router.afterEach(() => {
           <div class="notion-page-icon-inline notion-page-icon-image">
             <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%; ">
               <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
-                <img alt="Sricor" :src="imagePath" style="border-radius: 25px; display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;">
+                <img alt="Sricor" :src="imageUrl + image + imageParams" style="border-radius: 25px; display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;">
               </span>
             </span>
           </div>

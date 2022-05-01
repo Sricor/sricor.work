@@ -1,13 +1,16 @@
 <script setup>
 import { shallowReactive } from 'vue'
+import config from '/site.config.js'
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 import Wrapper from '~/components/Wrapper.vue'
 import PostDescription from '~/components/PostDescription.vue'
 
 const page = shallowReactive({
+  image: 'cat.jpg',
   description: {},
-  imagePath: "https://data-1304997866.cos.ap-guangzhou.myqcloud.com/images/",
+  imageUrl: config.image.url,
+  imageParams: config.image.params
 })
 
 // dark mode
@@ -29,11 +32,11 @@ const setPostDescription = (e) => { page.description = e }
   <div :class="page.mode" class="notion notion-app" name="notion">
     <div class="notion-frame">
       <div class="notion-page-scroller">
-        <Navbar @modeChange="modeChange"/>
-        <Wrapper :imagePath="page.imagePath" :wrapper="page.wrapper" />
+        <Navbar @modeChange="modeChange" :image="page.image" :imageUrl="page.imageUrl" :imageParams="page.imageParams" />
+        <Wrapper :wrapper="page.wrapper" :imageUrl="page.imageUrl" :imageParams="page.imageParams"/>
             <main :class="page.mainType" class="notion-page notion-page-has-cover notion-page-has-icon notion-page-has-image-icon notion-full-page">
-              <PostDescription :imagePath="page.imagePath" :description="page.description"/>
-                <RouterView @setWrapper="setWrapper" @setPostDescription="setPostDescription" @setMainType="setMainType" />
+              <PostDescription :description="page.description" :imageUrl="page.imageUrl" :imageParams="page.imageParams" />
+                <RouterView @setWrapper="setWrapper" @setPostDescription="setPostDescription" @setMainType="setMainType" :imageUrl="page.imageUrl" :imageParams="page.imageParams"/>
             </main> 
         <Footer />
       </div>

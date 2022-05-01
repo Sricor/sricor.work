@@ -4,6 +4,11 @@ import { shallowReactive } from 'vue'
 import BlogPosts from '~/pages/blog/index.vue'
 import PortfolioPosts from '~/pages/portfolio/index.vue'
 
+defineProps({
+  imageUrl: String,
+  imageParams: String
+})
+
 const collection = shallowReactive({
   type: BlogPosts
 })
@@ -60,7 +65,7 @@ emits(
       <br>
       <keep-alive>
         <transition name="fade" mode='out-in'>
-          <component :is="collection.type" />
+          <component :is="collection.type" :imageUrl="imageUrl" :imageParams="imageParams" />
         </transition>
       </keep-alive>
     </article>

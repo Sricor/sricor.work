@@ -18,7 +18,10 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       dirs: 'src/pages',
-
+      extendRoute(route, parent) {
+        route.path =  encodeURI(route.path)
+        console.log(route.path)
+      },
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
