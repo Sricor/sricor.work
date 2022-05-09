@@ -7,7 +7,6 @@ import { useHead } from '@vueuse/head'
 import 'nprogress/nprogress.css'
 import NProgress from 'nprogress'
 
-import './main.css'
 
 const route = useRoute()
 const router = useRouter()
