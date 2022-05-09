@@ -1,6 +1,5 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import { shallowReactive, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
@@ -12,17 +11,32 @@ import './main.css'
 
 const route = useRoute()
 const router = useRouter()
-// site head
+
+const siteData = shallowReactive({
+  title: `Sricor`,
+  description: `My beautiful website`,
+})
+
+const setHead = () => {
+  let path = decodeURI(route.path).split('/').slice(1)
+  if (path.slice(-1)[0] != '') {
+    siteData.title =  path.slice(-1)[0] +' - Sricor'
+  }
+  else {
+    siteData.title = 'Welcome - Sricor'
+  }
+}
+
 useHead({
-  // Can be static or computed
-  title: 'Sricor',
+  title: computed(() => siteData.title),
   meta: [
     { charset: "UTF-8" },
     { name: "description", content: "Sricor" },
     { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    {name: `description`, content: computed(() => siteData.description) },
   ],
   link:[
-    { rel: 'icon', href: '/CatRound.webp'}
+    { rel: 'icon', href: '/favicon.ico'}
   ]
 })
 
@@ -33,38 +47,11 @@ router.beforeEach((to, from, next) => {
 })
 router.afterEach(() => {
   // window.scrollTo(0,0)  // backTop
+  setHead()
   NProgress.done()  // NProgress load end
 })
-
 </script>
 
 <template>
-  <div id="app">
-    <RouterView />
-  </div>
+  <RouterView />
 </template>
-
-<style>
-::-webkit-scrollbar {
-  width:10px;
-  height:10px;
-}
-::-webkit-scrollbar-track {
-  background: rgb(239, 239, 239);
-  border-radius:2px;
-}
-::-webkit-scrollbar-thumb {
-  background: #bfbfbf;
-  border-radius:10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #333;
-}
-::-webkit-scrollbar-corner {
-  background: #179a16;
-}
-
-#nprogress .bar {
-  background-color: rgba(45,170,219,.3);
-}
-</style>

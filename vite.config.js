@@ -1,19 +1,19 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 import Layouts from 'vite-plugin-vue-layouts'
 import Pages from 'vite-plugin-pages'
-import path from 'path'
+import Path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
     alias: {
-      '~': path.resolve(__dirname, "./src"),
+      '~': Path.resolve(__dirname, "./src"),
     },
   },
   
   plugins: [
-    vue(),
+    Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
@@ -26,6 +26,5 @@ export default defineConfig({
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
-
   ]
 })
